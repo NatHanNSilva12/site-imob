@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafael Silva corretor imobiliário</title>
+  <link rel="icon" href="assets/images/logo.png">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <ion-icon name="business-outline"></ion-icon> Rafael Silva
+      </a>
+
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Inicio</a>
+          </li>
+
+          <li>
+            <a href="#sobre" class="navbar-link" data-nav-link>Sobre</a>
+          </li>
+
+          <li>
+            <a href="#imoveis" class="navbar-link" data-nav-link>Imóveis</a>
+          </li>
+
+          <li>
+            <a href="#contato" class="navbar-link" data-nav-link>Contato</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn-secondary">Registrar</a>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="article">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="hero">
+        <div class="container">
+
+          <div class="hero-bg">
+            <div class="hero-content">
+
+              <h1 class="h1 hero-title">
+                Deixe-me lhe ajudar a achar seu <span class="span">lindo</span> imóvel
+              </h1>
+
+              <p class="hero-text">
+                Uma boa plataforma de compra e venda de imóveis.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="hero-form-wrapper">
+            <div class="form-tab">
+
+              <button class="tab-btn active" data-tab-btn>Comprar</button>
+              <button class="tab-btn" data-tab-btn>Vender</button>
+              <button class="tab-btn" data-tab-btn>Alugar</button>
+
+            </div>
+
+            <form action="" class="hero-form">
+
+              <div class="input-wrapper">
+
+                <label for="search" class="input-label">Procurar : </label>
+
+                <input type="search" name="search" id="search" placeholder="Procure sua casa" required
+                  class="input-field">
+
+                <ion-icon name="search-outline"></ion-icon>
+
+              </div>
+
+              <div class="input-wrapper">
+                <label for="category" class="input-label">Selecionar Categorias:</label>
+
+                <select name="category" id="category" class="dropdown-list">
+
+                  <option value="house">Casas</option>
+                  <option value="apartment">Apartamentos</option>
+
+                </select>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="min-price" class="input-label">Valor Minimo :</label>
+
+                <select name="min-price" id="min-price" class="dropdown-list">
+
+                  <option value="min price">Valor Minimo</option>
+                  <option value="500">100 mil</option>
+                  <option value="1000">200 mil</option>
+                  <option value="2000">400 mil</option>
+                  <option value="3000">600 mil</option>
+                  <option value="4000">800 mil</option>
+                  <option value="5000">1 milhão</option>
+                  <option value="6000">2 milhões</option>
+
+                </select>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="max-price" class="input-label">Valor Máximo :</label>
+
+                <select name="max-price" id="max-price" class="dropdown-list">
+
+                  <option value="max price">Valor Máximo</option>
+                  <option value="500">100 mil</option>
+                  <option value="1000">200 mil</option>
+                  <option value="2000">400 mil</option>
+                  <option value="3000">600 mil</option>
+                  <option value="4000">800 mil</option>
+                  <option value="5000">1 milhão</option>
+                  <option value="6000">2 milhões</option>
+
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Procure Agora</button>
+
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+      <section class="sobre" id="sobre">
+      <section class="section about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner img-holder" style="--width: 600; --height: 700;">
+            <img src="./assets/images/about-banner.jpg" width="600" height="700" loading="lazy" alt="about banner"
+              class="img-cover">
+          </div>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">Eficiência, Profissionalismo e transparência com o cliente</h2>
+
+            <p class="section-text">
+              A mais de 3 anos no mercado de vendas ... blá blá blá de corretor, faz uma descrição bonita aí. 
+            </p>
+
+            <a href="#" class="btn btn-primary">Saiba mais</a>
+
+          </div>
+
+        </div>
+      </section>
+      </section>
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-label="service">
+        <div class="container">
+
+          <h2 class="h2 section-title">Como funciona</h2>
+
+          <p class="section-text">
+            Uma boa plataforma de compra e venda de imóveis.
+          </p>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Encontrando o corretor</h3>
+
+                <p class="card-text">
+                  Agendamos uma visita em seu imóvel e discutimos sobre valores.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                
+                <div class="card-icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Avaliação do imóvel</h3>
+
+                <p class="card-text">
+                  Avaliamos o valor de seu imóvel conforme a localização e área total.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="key"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Venda do imóvel</h3>
+
+                <p class="card-text">
+                  Divulgamos seu imóvel em todas plataformas e redes sociais e vendemos.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROPERTY
+      -->
+      <section class="imoveis" id="imoveis">
+
+      <section class="section property" aria-label="property">
+        <div class="container">
+
+          <h2 class="h2 section-title">Imóveis disponíveis</h2>
+
+          <p class="section-text">
+            Uma boa plataforma de compra e venda de imóveis.
+          </p>
+
+          <ul class="property-list">
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/imob01.jpg" width="800" height="533" loading="lazy"
+                    alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Linda casa – Granja Vianna/Cotia /SP</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">70m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">2 Quartos</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">1 Banheiro</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Valor</span>
+
+                      <span class="meta-text">R$ 395.000</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Avaliação</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/te_-1.jpg" width="800" height="533" loading="lazy"
+                    alt="59345 STONEWALL DR, Plaquemine, LA 70764, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Terreno - Vargem Grande Paulista/SP</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">360 m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">0 Quartos</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">0 Banheiros</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Valor</span>
+
+                      <span class="meta-text">R$ 180.000</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Avaliação</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/imob02.jpg" width="800" height="533" loading="lazy"
+                    alt="3723 SANDBAR DR, Addis, LA 70710, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Linda casa – Granja Vianna/Cotia /SP</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">106m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">3 Quartos</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">2 Banheiros</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Valor</span>
+
+                      <span class="meta-text">R$ 695.000</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Avaliação</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/imob03.jpg" width="800" height="533" loading="lazy"
+                    alt="LOT 21 ROYAL OAK DR, Prairieville, LA 70769, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Maravilhosa casa – Granja Vianna/Cotia /SP
+                    </a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">173m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">4 Quartos</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">3 Banheiros</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Valor</span>
+
+                      <span class="meta-text">R$ 1.400.000</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Avaliação</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/imob04.jpg" width="800" height="533" loading="lazy"
+                    alt="710 BOYD DR, Unit #1102, Baton Rouge, LA 70808, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Compre casa – Granja Vianna/Cotia /SP</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">570m²</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">4 Quartos</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">2 Banheiros</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Valor</span>
+
+                      <span class="meta-text">R$ 1.980.000</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Avaliação</span>
+
+                      <span class="meta-text">
+
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <span>5.0</span>
+
+                      </span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/embreve.png" width="800" height="533" loading="lazy"
+                    alt="5133 MCLAIN WAY, Baton Rouge, LA 70809, USA" class="img-cover">
+                </figure>
+
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">EM BREVE</a>
+                  </h3>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">???</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">???</span>
+                    </li>
+
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+
+                      <span class="item-text">???</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-meta">
+
+                    <div>
+                      <span class="meta-title">Valor</span>
+
+                      <span class="meta-text">???</span>
+                    </div>
+
+                    <div>
+                      <span class="meta-title">Avaliação</span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+</section>
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+      <section class="contato" id="contato">
+      <section class="section contact" aria-label="contact">
+        <div class="container">
+
+          <h2 class="h2 section-title">Está com dúvidas? Fale comigo!</h2>
+
+          <p class="section-text">
+            Uma boa plataforma de compra e venda de imóveis.
+          </p>
+
+          <button class="btn btn-primary">
+            <ion-icon name="call-outline"></ion-icon>
+
+            <span class="span">Me contate</span>
+          </button>
+
+        </div>
+      </section>
+      </section>
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="newsletter" aria-label="newsletter">
+        <div class="container">
+
+          <div class="wrapper">
+            <h2 class="h2 section-title">Envie um email!</h2>
+
+            <p class="section-text">Envie um email para mim</p>
+          </div>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Insira seu email :" aria-label="Insira seu email"
+              required class="email-field">
+
+              <a href="mailto:raffawn@gmail.com" class="btn btn-secondary">Enviar Email</a>
+          </form>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <ion-icon name="business-outline"></ion-icon> Rafael Silva
+          </a>
+
+          <p class="footer-text">
+            Uma boa plataforma de compra e venda de imóveis.
+          </p>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Facebook</p>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/rafaelsergioremax" target="https://www.facebook.com/rafaelsergioremax" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Facebook</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/rafael_seu_broker/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="https://www.instagram.com/rafael_seu_broker/?igshid=MzNlNGNkZWQ4Mg%3D%3D" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Instagram</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#imoveis" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Imóveis</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#contato" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Contato</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Detalhes do contato</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline"></ion-icon>
+
+            <a href="mailto:raffawn@gmail.com" class="footer-link">raffawn@gmail.com</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call-outline"></ion-icon>
+
+            <a href="https://wa.me/5511994533919" target="https://wa.me/5511994533919" class="footer-link">+55 11 99453-3919</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Rafael Silva. All Right Reserved, Criado por <a href="https://www.linkedin.com/in/nathan-silva-5abb8a241/" target="https://www.linkedin.com/in/nathan-silva-5abb8a241/" class="copyright-link">Nathan Silva</a>.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/rafaelsergioremax" target="https://www.facebook.com/rafaelsergioremax" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/rafael_seu_broker/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="https://www.instagram.com/rafael_seu_broker/?igshid=MzNlNGNkZWQ4Mg%3D%3D" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/nathan-silva-5abb8a241/" target="https://www.linkedin.com/in/nathan-silva-5abb8a241/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
