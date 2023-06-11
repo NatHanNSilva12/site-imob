@@ -366,7 +366,7 @@ body {
 
 .form-tab {
   padding: 16px;
-  border-block-end: 1px solid var(--gainsboro);
+  border-block-end: 1px solid var(--white);
   display: flex;
   justify-content: center;
 }
@@ -847,6 +847,7 @@ body {
     max-width: 600px;
     margin-inline: auto;
     background-color: unset;
+    background-color: var(--white);
   }
 
   .hero .form-tab,
