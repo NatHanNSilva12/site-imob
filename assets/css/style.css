@@ -21,7 +21,7 @@
    */
 
   --oxford-blue_60: hsla(224, 34%, 13%, 0.6);
-  --green-pigment: #d3ad7f;
+  --douradopoop: #d3ad7f;
   --oxford-blue: #fff;
   --maximum-red: hsl(0, 72%, 51%);
   --eerie-black: 1rem solid rgba(255,255,255,.3);
@@ -37,8 +37,8 @@
   --gunmetal: hsl(215, 28%, 17%);
   --manatee: hsl(218, 11%, 65%);
   --mango: hsl(43, 96%, 56%);
-  --white: #010103;
-  --black: #fff;
+  --preto: #010103;
+  --branco: #fff;
 
   /**
    * typography
@@ -148,7 +148,7 @@ html {
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--preto);
   font-size: var(--fs-5);
   color: var(--cadet-gray);
 }
@@ -164,8 +164,8 @@ body {
 .container { padding-inline: 15px; }
 
 .btn {
-  background-color: var(--green-pigment);
-  color: var(--white);
+  background-color: var(--douradopoop);
+  color: var(--preto);
   font-weight: var(--fw-500);
   max-width: max-content;
   padding: var(--padding, 12px 28px);
@@ -221,7 +221,7 @@ body {
 \*-----------------------------------*/
 
 .header {
-  background-color: var(--white);
+  background-color: var(--preto);
   position: fixed;
   top: 0;
   left: 0;
@@ -242,7 +242,7 @@ body {
 .logo {
   font-size: 2.2rem;
   font-weight: var(--fw-600);
-  color: var(--black);
+  color: var(--branco);
 }
 
 .logo ion-icon {
@@ -272,7 +272,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--preto);
   padding: 0;
   max-height: 0;
   overflow: hidden;
@@ -302,7 +302,7 @@ body {
   padding: 12px 25px;
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--green-pigment); }
+.navbar-link:is(:hover, :focus) { color: var(--douradopoop); }
 
 
 
@@ -333,19 +333,20 @@ body {
   grid-template-columns: 1fr;
   place-content: center;
   text-align: center;
+  color: var(--branco);
 }
 
 .hero-title {
   max-width: 16ch;
   margin-inline: auto;
-  color: var(--black);
+  color: var(--branco);
   line-height: 1.5;
   margin-block-end: 20px;
 }
 
 .hero-title .span {
   display: inline-block;
-  color: var(--green-pigment);
+  color: var(--douradopoop);
 }
 
 .hero-text {
@@ -355,7 +356,8 @@ body {
 }
 
 .hero-form-wrapper {
-  background-color: var(--black);
+  background-color: var(--branco);
+  color: var(--branco);
   margin-block-start: -100px;
   width: calc(100% - 10px);
   margin-inline: auto;
@@ -366,9 +368,10 @@ body {
 
 .form-tab {
   padding: 16px;
-  border-block-end: 1px solid var(--white);
+  border-block-end: 1px solid var(--preto);
   display: flex;
   justify-content: center;
+  color: var(--branco);
 }
 
 .tab-btn {
@@ -377,53 +380,56 @@ body {
   font-weight: var(--fw-500);
   border-radius: var(--radius-6);
   transition: var(--transition);
+  color: var(--branco);
 }
 
-.tab-btn:is(:hover, :focus) { color: var(--green-pigment); }
+.tab-btn:is(:hover, :focus) { color: var(--douradopoop); }
 
 .tab-btn.active {
-  color: var(--black);
-  background-color: var(--green-pigment);
+  color: var(--branco);
+  background-color: var(--douradopoop);
+  color: var(--branco);
 }
 
 .hero-form {
   display: grid;
   gap: 25px;
   padding: 25px;
+  color: var(--branco);
 }
 
 .hero-form .input-wrapper { position: relative; }
 
-.hero-form :is(.input-label, .input-field) { color: var(--black); }
+.hero-form :is(.input-label, .input-field) { color: var(--branco); }
 
 .hero-form .input-label {
-  font-weight: var(--black);
+  font-weight: var(--branco);
   margin-block-end: 10px;
 }
 
 .hero-form :is(.input-field, .dropdown-list) {
   min-height: 40px;
-  font-weight: var(--black);
-  border: 1px solid var(--black);
+  font-weight: var(--branco);
+  border: 1px solid var(--branco);
   border-radius: var(--radius-4);
   outline: none;
   transition: var(--transition);
 }
 
-.hero-form :is(.input-field, .dropdown-list):focus { border-color: var(--green-pigment); }
+.hero-form :is(.input-field, .dropdown-list):focus { border-color: var(--douradopoop); }
 
 .hero-form .input-wrapper ion-icon {
   position: absolute;
   top: 50%;
   transform: translateY(20%);
   left: 15px;
-  color: var(--black);
+  color: var(--branco);
   --ionicon-stroke-width: 40px;
 }
 
 .hero-form .input-field { padding-inline: 45px 15px; }
 
-.hero-form .input-field::placeholder { color: var(--black); }
+.hero-form .input-field::placeholder { color: var(--branco); }
 
 .hero-form .dropdown-list { padding-inline: 15px; }
 
@@ -451,8 +457,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--white);
-  color: var(--green-pigment);
+  background-color: var(--preto);
+  color: var(--douradopoop);
   padding: 30px;
   font-size: 20px;
   border-radius: 50px;
@@ -491,7 +497,7 @@ body {
 
 .service-card .card-icon ion-icon {
   font-size: 30px;
-  color: var(--green-pigment);
+  color: var(--douradopoop);
   --ionicon-stroke-width: 45px;
 }
 
@@ -530,7 +536,7 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: var(--white);
+  background-color: var(--preto);
   color: var(--maximum-red);
   padding: 12px;
   border-radius: 50px;
@@ -546,7 +552,7 @@ body {
   transition: var(--transition);
 }
 
-.property-card .card-title:is(:hover, :focus) { color: var(--green-pigment); }
+.property-card .card-title:is(:hover, :focus) { color: var(--douradopoop); }
 
 .property-card .card-list {
   display: flex;
@@ -566,7 +572,7 @@ body {
 }
 
 .property-card .item-icon {
-  color: var(--green-pigment);
+  color: var(--douradopoop);
   font-size: 24px;
 }
 
@@ -640,7 +646,7 @@ body {
   transform: translateX(-50%);
   max-width: calc(100% - 20px);
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--preto);
   padding: 40px 24px;
   text-align: center;
   box-shadow: var(--shadow-3);
@@ -689,7 +695,7 @@ body {
 }
 
 .footer .logo {
-  color: var(--white);
+  color: var(--branco);
   font-weight: var(--fw-500);
   margin-block-end: 25px;
 }
@@ -734,7 +740,7 @@ body {
 .footer-list .footer-item:not(:last-child) { margin-block-end: 25px; }
 
 .footer-item ion-icon {
-  color: var(--green-pigment);
+  color: var(--douradopoop);
   font-size: 22px;
   --ionicon-stroke-width: 40px;
 }
@@ -742,7 +748,7 @@ body {
 .address { line-height: 1.5; }
 
 .address-link {
-  color: var(--green-pigment);
+  color: var(--douradopoop);
   margin-block-start: 10px;
   transition: var(--transition);
 }
@@ -777,9 +783,9 @@ body {
 }
 
 .social-link:is(:hover, :focus) {
-  background-color: var(--green-pigment);
-  border-color: var(--green-pigment);
-  color: var(--white);
+  background-color: var(--douradopoop);
+  border-color: var(--douradopoop);
+  color: var(--preto);
 }
 
 
@@ -794,8 +800,8 @@ body {
   position: fixed;
   bottom: 10px;
   right: 20px;
-  background-color: var(--green-pigment);
-  color: var(--white);
+  background-color: var(--douradopoop);
+  color: var(--preto);
   font-size: 14px;
   padding: 12px;
   border-radius: 50px;
@@ -846,12 +852,12 @@ body {
   .hero-form-wrapper {
     max-width: 600px;
     margin-inline: auto;
-    background-color: unset;
-    background-color: var(--white);
+    background-color: var(--preto);
+    background-color: var(--preto);
   }
 
   .hero .form-tab,
-  .hero-form { background-color: var(--white); }
+  .hero-form { background-color: var(--preto); }
 
   .hero .form-tab {
     max-width: max-content;
@@ -912,6 +918,9 @@ body {
   .container,
   .hero-form-wrapper { max-width: 700px; }
 
+  .hero .form-tab,
+  .hero-form { background-color: var(--preto); }
+
   .section-text {
     max-width: 55ch;
     margin-inline: auto;
@@ -934,6 +943,8 @@ body {
 
   .hero-form { grid-template-columns: 1fr 1fr; }
 
+  .hero .form-tab,
+  .hero-form { background-color: var(--preto); }
 
 
   /**
@@ -1043,6 +1054,9 @@ body {
 
   .header > .container { gap: 30px; }
 
+  .hero .form-tab,
+  .hero-form { background-color: var(--preto); }
+
   .nav-toggle-btn { display: none; }
 
   .navbar,
@@ -1070,6 +1084,9 @@ body {
   .hero-content { padding-inline: calc(50% - 450px); }
 
   .hero-form { grid-template-columns: repeat(4, 1fr); }
+
+  .hero .form-tab,
+  .hero-form { background-color: var(--preto); }
 
 
 
@@ -1134,6 +1151,9 @@ body {
    */
 
   .hero-content { padding-inline: calc(50% - 560px); }
+
+  .hero .form-tab,
+  .hero-form { background-color: var(--preto); }
 
 
 
